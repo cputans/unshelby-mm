@@ -9,4 +9,4 @@ RUN go build -o unshelbymm *.go
 
 FROM alpine
 COPY --from=build /app/unshelbymm .
-CMD ["unshelbymm"]
+CMD ["/app/unshelbymm"]
